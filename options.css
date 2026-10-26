@@ -31,6 +31,12 @@ main {
   margin: 0 auto;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 h1 {
   color: var(--accent);
 }
