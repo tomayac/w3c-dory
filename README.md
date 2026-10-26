@@ -8,10 +8,12 @@ SPDX-License-Identifier: Apache-2.0
 A Chrome extension that keeps you logged in to W3C and, after a login, takes you
 to the page you were going to in the first place.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/options-dark.png">
-  <img src="docs/options-light.png" width="720" alt="The W3C Dory settings page: logged in as tsteiner, the session end date, automatic login on, the last login attempt marked OK, and the stored credentials.">
-</picture>
+![Without W3C Dory: logging in from a TPAC meeting page lands on the generic "You are logged in" page, and 28 days later the session has expired. With W3C Dory: "Remember me" is pre-ticked, the login returns to the meeting page, and the extension renews the session on day 21, so you stay logged in.](docs/demo.gif)
+
+The full-resolution video is in [docs/demo.mp4](docs/demo.mp4). It shows the
+same flow twice, first without and then with the extension. The meeting's
+joining instructions are blurred, and the 28 days are simulated by deleting the
+`w3csess` cookie.
 
 ## How W3C login works
 
@@ -88,6 +90,11 @@ page says so, and the login page then works as usual.
 
 Load this folder as an unpacked extension at `chrome://extensions`. Click the
 toolbar icon for the status and the stored login.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/options-dark.png">
+  <img src="docs/options-light.png" width="720" alt="The W3C Dory settings page: logged in as tsteiner, the session end date, automatic login on, the last login attempt marked OK, and the stored credentials.">
+</picture>
 
 ## Icon
 
