@@ -8,6 +8,11 @@ SPDX-License-Identifier: Apache-2.0
 A Chrome extension that keeps you logged in to W3C and, after a login, takes you
 to the page you were going to in the first place.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/options-dark.png">
+  <img src="docs/options-light.png" width="720" alt="The W3C Dory settings page: logged in as tsteiner, the session end date, automatic login on, the last login attempt marked OK, and the stored credentials.">
+</picture>
+
 ## How W3C login works
 
 Observed in October 2026:
