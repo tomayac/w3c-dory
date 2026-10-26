@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "W3C Dory",
+  "version": "0.2.0",
+  "description": "Stay logged in to W3C, and land where you wanted to go after logging in.",
+  "permissions": [
+    "alarms",
+    "cookies",
+    "storage",
+    "webNavigation",
+    "webRequest"
+  ],
+  "host_permissions": ["https://*.w3.org/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "W3C Dory",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://auth.w3.org/login*"],
+      "js": ["login.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}
