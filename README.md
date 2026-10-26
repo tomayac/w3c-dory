@@ -83,3 +83,12 @@ page says so, and the login page then works as usual.
 
 Load this folder as an unpacked extension at `chrome://extensions`. Click the
 toolbar icon for the status and the stored login.
+
+## Icon
+
+The icon combines Dory from _Finding Nemo_ (© Disney/Pixar) with the W3C logo (®
+W3C). Dory comes from
+[Wikipedia's copy of the image](<https://en.wikipedia.org/wiki/File:Dory_(Finding_Nemo).png>),
+and it is used here under fair use, as a small, non-commercial nod to Dory's
+famously short memory, which is the problem this extension solves. This project
+is not affiliated with or endorsed by Disney, Pixar, or W3C.
